@@ -17,10 +17,10 @@ Github Flowです。なのでブランチのマージ後は必ず削除をする
 ## ホスティング先
 フロントエンド（React）：Vercel or Heroku or CloudFront
 バックエンド（Laravel）：Heroku or AWS
-
+※フロントエンド担当の方はホスティング先を決め次第norman6464に連絡ください。
 
 ## データベース設計（ER図）
-このカラムなどを参考にしてDOA（データ指向アーキテクチャ）に沿ってUIなどを作ってください。
+このカラムなどを参考にしてDOA（データ指向プログラミング）に沿ってUIなどを作ってください。出ないとデータベースの作り直し = 処理ロジック全体の作り直しがおき、Laravel → ReactのJSONデータのやり取りで不備が起きプロジェクトの遅延が置きます。
 
 **テーブル名**  
  - users
@@ -30,6 +30,7 @@ Github Flowです。なのでブランチのマージ後は必ず削除をする
  - matches（マッチング）
  
  **リレーションシップ**
+ Nは一体多の多側です。  
  - Users ↔ UserSkills（1:N）
  - Users ↔ DesiredSkills（1:N）
  - Skills ↔ UserSkills（1:N）
@@ -39,7 +40,9 @@ Github Flowです。なのでブランチのマージ後は必ず削除をする
  
 [ER図](diagrams/image.png)
 
-
 ## UI/UXの図
 norman6464のチャットにFigmaなどで完成させた図などを下さい。そしたらこちらでREADMEの編集をします。
+
+## アーキテクチャー図
+
 
